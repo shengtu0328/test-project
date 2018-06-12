@@ -33,6 +33,13 @@ public class Test {
             }
         };
 
+        Message m=new Message() {
+            @Override
+            public void print() {
+
+            }
+        };
+
 
 
 

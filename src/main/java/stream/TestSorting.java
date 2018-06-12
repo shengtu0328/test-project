@@ -43,9 +43,9 @@ public class TestSorting {
       /*  listDevs.stream().map();*/
 
 
-/*
+
         listDevs.stream().filter((t)->t.getAge()>22)                        .forEach(u->System.out.println(u.getAge())  );;
-*/
+
 
 /*
 
@@ -62,7 +62,7 @@ public class TestSorting {
 
     }
 
-    private static List<Developer> getDevelopers() {
+    public static List<Developer> getDevelopers() {
 
         List<Developer> result = new ArrayList<Developer>();
 

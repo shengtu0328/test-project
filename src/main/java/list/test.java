@@ -10,11 +10,15 @@ public class test {
         List<String> fatherlist=new LinkedList<>();
         List<String> childlist=new ArrayList<>();
         childlist.add("before add");
-        fatherlist.addAll(childlist);
+        childlist.add("before add2");
+        System.out.println(childlist.toString());
+
+
+    /*    fatherlist.addAll(childlist);
         childlist.add("after add");
 
         for (int i = 0; i <fatherlist.size() ; i++) {
             System.out.println(fatherlist.get(i));
-        }
+        }*/
     }
 }

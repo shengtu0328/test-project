@@ -14,14 +14,14 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Message msg=new Message() {
+      /*  Message msg=new Message() {
             public void print() {
                 System.out.println("SSS");
             }
 
-           /* public void print2() {
+           *//* public void print2() {
 
-            }*/
+            }*//*
         };
 
       msg.print();
@@ -39,7 +39,7 @@ public class Test {
 
             }
         };
-
+*/
 
 
 

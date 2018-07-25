@@ -8,9 +8,15 @@ public class maptest {
 
     public static void main(String[] args) {
         List<Developer> listDevs = TestSorting.getDevelopers();
+
         List<Integer> agelist=listDevs.stream().map( i ->i.getAge()).collect(Collectors.toList());;
         for (Integer i:agelist) {
             System.out.println(i);
+
+        }
+        for(Developer d:listDevs)
+        {
+            System.out.println(d);
 
         }
 

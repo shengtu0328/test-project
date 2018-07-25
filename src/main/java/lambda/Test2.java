@@ -7,7 +7,7 @@ interface Message2{
         return x + y;
     }
 
-    int print(int x);
+    String print(String x);
 
 
 }
@@ -18,7 +18,7 @@ public class Test2 {
     public static void main(String[] args) {
 
         Message2 mmmmm=(x) -> x;
-        System.out.println(mmmmm.print(9));
+        System.out.println(mmmmm.print("sa"));
 
     }
 }

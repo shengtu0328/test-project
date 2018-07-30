@@ -1,8 +1,7 @@
 package stream;
 
 import java.math.BigDecimal;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class grouptest {
@@ -10,7 +9,7 @@ public class grouptest {
 
         List<Developer> listDevs = TestSorting.getDevelopers();
 
-
+/*
        Map<String, List<Developer>> collect = listDevs.stream().collect(Collectors.groupingBy(o -> o.getName()));
 
 
@@ -36,6 +35,32 @@ public class grouptest {
 
         collect2.forEach((key, value) -> {
             System.out.println(key + ":" + value);
+        });*/
+
+/*
+
+        Collections.sort(listDevs, new Comparator<Developer>() {
+
+            @Override
+            public int compare(Developer o1, Developer o2) {
+                return o1.age - o2.age;
+            }
         });
+*/
+
+
+        Optional<Developer> min = listDevs.stream().min(new Comparator<Developer>() {
+            @Override
+            public int compare(Developer o1, Developer o2) {
+                return o1.getAge() - o2.getAge();
+            }
+        });
+
+
+        System.out.println(min.get());
+/*
+        System.out.println(listDevs);
+*/
+
     }
 }

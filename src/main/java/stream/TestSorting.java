@@ -42,7 +42,9 @@ public class TestSorting {
 
       /*  listDevs.stream().map();*/
 
-
+       Long i1=1529633489440l;
+        Long i2=1l;
+        int c= (int) (i1-i2);
 
         listDevs.stream().filter((t)->t.getAge()>22)                        .forEach(u->System.out.println(u.getAge())  );;
 

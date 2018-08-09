@@ -15,6 +15,10 @@ public class Developer {
         this.age = age;
     }
 
+    public Developer(){
+
+    }
+
     public String getName() {
         return name;
     }

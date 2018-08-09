@@ -16,6 +16,10 @@ public class SortTest {
             this.age = age;
             this.name = name;
         }
+
+        public Dog(){
+
+        }
         @Override
         public String toString() {
             return "Dog [age=" + age + ", name=" + name + "]";

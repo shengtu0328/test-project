@@ -10,7 +10,7 @@ public class test {
 
         SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
-            long time = dateformat.parse("2018-07-27 08:44:17").getTime();
+            long time = dateformat.parse("2018-08-13 13:44:17").getTime();
             System.out.println(time);
 
 

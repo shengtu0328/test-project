@@ -1,7 +1,10 @@
 package System.currentTimeMillis;
 
+import stream.Developer;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.regex.Pattern;
 
 public class test2 {
     public static void main(String[] args) {
@@ -14,5 +17,9 @@ public class test2 {
 
                  if(3>1*2)
                      System.out.println("a");
+        Developer d=new Developer ();
+        d.setName(null);
+        Pattern p = Pattern.compile("aaaass");
+        System.out.println(p.matcher(d.getName()).matches());
     }
 }

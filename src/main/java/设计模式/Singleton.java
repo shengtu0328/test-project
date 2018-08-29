@@ -1,3 +1,4 @@
+/*
 package 设计模式;
 
 public class Singleton {
@@ -23,3 +24,4 @@ public class Singleton {
     }
 
 }
+*/

@@ -1,6 +1,6 @@
 package dalimoshi;
 
-public interface o {
+public interface interface11 {
 
     public void o();
 

@@ -1,6 +1,6 @@
 package dalimoshi;
 
-public class A implements o {
+public class A implements interface11 {
 
     private aa aa=new aa();
 

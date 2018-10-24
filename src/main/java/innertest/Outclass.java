@@ -12,10 +12,10 @@ public class Outclass {
 
         public void inenermethod()
         {
-            Outclass o=new Outclass();
+            Outclass interface11=new Outclass();
 
-            String ss=o.s;
-            String oo=o.i;
+            String ss=interface11.s;
+            String oo=interface11.i;
         }
 
     }

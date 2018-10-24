@@ -10,16 +10,16 @@ public class grouptest {
         List<Developer> listDevs = TestSorting.getDevelopers();
 
 /*
-       Map<String, List<Developer>> collect = listDevs.stream().collect(Collectors.groupingBy(o -> o.getName()));
+       Map<String, List<Developer>> collect = listDevs.stream().collect(Collectors.groupingBy(interface11 -> interface11.getName()));
 
 
-        Map<String,Integer> collect2 = listDevs.stream().collect(Collectors.groupingBy(o -> o.getName(),Collectors.summingInt(Developer::getAge)));
+        Map<String,Integer> collect2 = listDevs.stream().collect(Collectors.groupingBy(interface11 -> interface11.getName(),Collectors.summingInt(Developer::getAge)));
 
 
         Map<String, Map<BigDecimal, Integer>> collect3 = listDevs.stream().collect
-                (Collectors.groupingBy(o -> o.getName(),
+                (Collectors.groupingBy(interface11 -> interface11.getName(),
 
-                        Collectors.groupingBy(o -> o.getSalary(), Collectors.summingInt(Developer::getAge))));
+                        Collectors.groupingBy(interface11 -> interface11.getSalary(), Collectors.summingInt(Developer::getAge))));
 
 
         collect.forEach((key, value) -> {

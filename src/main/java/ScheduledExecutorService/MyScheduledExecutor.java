@@ -5,7 +5,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @program: test-project
+ * @program: Department-project
  * @description: MyScheduledExecutor
  * @author: rqxiao
  * @create: 2018-09-05 15:03

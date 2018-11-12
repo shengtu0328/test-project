@@ -22,6 +22,8 @@ public class 回文数9 {
     }
 
 
+
+
     public static void main(String[] args) {
         回文数9 t= new 回文数9();
         System.out.println(t.isPalindrome(356653));

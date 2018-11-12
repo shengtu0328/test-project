@@ -59,13 +59,29 @@ public class Department {
 
     }
 
+
+    public static void getlist(Department department){
+        System.out.println(department.getTitle());
+        for (int i = 0; i < department.getChildern().size(); i++) {
+            getlist(department.getChildern().get(i));
+        }
+
+    }
+
     public static void main(String[] args) {
         ArrayList<Department0> list = Department0.getlist();
         Department d = new Department();
         for (int i = 0; i < list.size(); i++) {
             Department.getresult(list.get(i), d);
         }
-        System.out.println(d);
+        //System.out.println(d);
+        Department.getlist(d);
+
+
+
+
+
+
         //Map<Integer, Integer> collect = list.stream().collect(Collectors.groupingBy(d0 -> d0.getPath().length(), Collectors.summingInt(Department0::getId)));
 
         //List<Department0> list0 = list.stream().filter(department0 -> department0.getPath().length() == 0).collect(Collectors.toList());

@@ -22,8 +22,14 @@ public class test extends test1{
 
     public static void main(String[] args) {
         test t1= new test();
-
         test t2= new test();
+
+        System.out.println(t1.hashCode());
+        System.out.println(t1.hashCode());
+        System.out.println(t1.hashCode());
+        System.out.println(t1.hashCode());
+        System.out.println(t1.hashCode());
+
 
 
 

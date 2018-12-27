@@ -16,10 +16,10 @@ public class SynObject333 {
         System.out.println((Thread.currentThread().getName() + "获得了lock锁运行结束"));
     }
 
-    public void   method() {
+    public  synchronized void   method() {
         System.out.println((Thread.currentThread().getName() + "获得普通方法"));
         try {
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

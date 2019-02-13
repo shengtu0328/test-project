@@ -17,6 +17,9 @@ public class test {
         map.put("7","8");
 
 
+        System.out.println(map.get("1"));
+        System.out.println(map.get("2"));
+
         Set<Map.Entry<String, String>> entrySet = map.entrySet();
 
 

@@ -14,6 +14,22 @@ public class dfs2 {
 
 
     public void initGraphData() {
+
+
+
+
+//          1
+//        / |  \
+//       2  5   4
+//        \   /
+//         3
+
+
+
+
+
+
+
 //        图结构如下
 //          1
 //        /   \
@@ -45,7 +61,7 @@ public class dfs2 {
 
 
 
-    private Stack<String> stack = new Stack<String>();
+    private static Stack<String> stack = new Stack<String>();
     public void DFSSearch(String startPoint) {
         stack.push(startPoint);
         dfsLoop();
@@ -77,11 +93,11 @@ public class dfs2 {
 
 
         }
-
+/*
         if(!contains){
             stack.pop();
 
-        }
+        }*/
     }
 
 
@@ -94,6 +110,8 @@ public class dfs2 {
 //        test.BFSSearch("1");
 
         System.out.println(list);
+        System.out.println(stack);
+
     }
 
 

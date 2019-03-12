@@ -18,6 +18,12 @@ public class optioneltest {
 
 
     public static void main(String[] args) {
+
+
+
+        Integer a=900000000;
+        System.out.println(a);
+
         //调用工厂方法创建Optional实例
         User u1= new User();
 

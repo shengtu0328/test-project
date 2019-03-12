@@ -10,18 +10,12 @@ public class filtertest2 {
         List<Integer> l= new ArrayList<Integer>();
         l.add(1);
         l.add(2);
-        l.add(3);
-        l.add(4);
-        l.add(5);
-        l.add(6);
-        l.add(7);
-        l.add(8);
-        l.add(1);
 
         List<Integer> collect = l.stream().filter(s -> s == 1).collect(Collectors.toList());
         for (int i = 0; i <l.size() ; i++) {
-            System.out.println(l.get(i));
+            System.out.print(l.get(i));
         }
+        System.out.println("-----------------------");
 
         for (int i = 0; i <collect.size() ; i++) {
             System.out.println(collect.get(i));

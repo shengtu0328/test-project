@@ -7,14 +7,14 @@ public class test {
 
     public static void main(String[] args) {
         //工厂方法创建Optional实例
-        Optional<String> name = Optional.of("asdas");
-        if (name.isPresent()) {
-            //在Optional实例内调用get()返回已存在的值
-            System.out.println(name.get());//输出optional
-        }
-        name.ifPresent((value) -> {
-            System.out.println("The length of the value is: " + value.length());
-        });
+//        Optional<String> name = Optional.of("asdas");
+//        if (name.isPresent()) {
+//            //在Optional实例内调用get()返回已存在的值
+//            System.out.println(name.get());//输出optional
+//        }
+//        name.ifPresent((value) -> {
+//            System.out.println("The length of the value is: " + value.length());
+//        });
 
 
 
@@ -43,7 +43,7 @@ public class test {
 //输出：There is no value!
         System.out.println(empty.orElse("There is no value !"));
 //输出：optional
-        System.out.println(name.orElse("There is some value!"));
+       // System.out.println(name.orElse("There is some value!"));
 
 
 

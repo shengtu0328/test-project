@@ -34,6 +34,8 @@ public class optioneltest {
         System.out.println(Optional.ofNullable(u1.getName()).orElse("没有姓名"));
         System.out.println(Optional.ofNullable(u2.getName()).orElse("没有姓名"));
 
+
+        System.out.println(Optional.ofNullable(null).orElse(100));
     }
 }
 

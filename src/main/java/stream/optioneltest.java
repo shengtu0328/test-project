@@ -2,6 +2,8 @@ package stream;
 
 import java.util.Optional;
 
+import static junit.framework.TestCase.assertEquals;
+
 /**
  * @program: test-project
  * @author: rqxiao
@@ -22,20 +24,32 @@ public class optioneltest {
 
 
         Integer a=900000000;
-        System.out.println(a);
+     //   System.out.println(a);
 
         //调用工厂方法创建Optional实例
         User u1= new User();
+    Optional.ofNullable(u1).ifPresent(System.out::println);
+
 
         User u2= new User();
         u2.setName("aaaa");
 
+        Optional.ofNullable(u2).ifPresent(System.out::println);
 
-        System.out.println(Optional.ofNullable(u1.getName()).orElse("没有姓名"));
-        System.out.println(Optional.ofNullable(u2.getName()).orElse("没有姓名"));
+        System.out.println(Optional.ofNullable(u2.getName()).isPresent());
 
 
-        System.out.println(Optional.ofNullable(null).orElse(100));
+
+//
+//        User u3=null;
+//
+//
+//
+//        System.out.println(Optional.ofNullable(u2.getName()).get());
+//
+//        System.out.println(Optional.ofNullable(u3.getName()).orElse("没有姓名"));
+
+      //  System.out.println(Optional.ofNullable(null).orElse(100));
     }
 }
 

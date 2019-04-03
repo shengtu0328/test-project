@@ -1,22 +1,18 @@
 package string;
 
-/**
- * @program: test-project
- * @author: rqxiao
- * @create: 2019-02-22 14:50
- **/
 public class substringtest {
 
     public static void main(String args[]) {
-        String Str = new String("hello");
+        String Str = new String("2018-01");
 
         System.out.print("返回值 :" );
-        System.out.println(Str.replace('o', 'T'));
-        System.out.println(Str);
+        System.out.println(Str.substring(0,4) );
 
         System.out.print("返回值 :" );
-        System.out.println(Str.replace('l', 'D'));
-        System.out.println(Str);
+        System.out.println(Str.substring(5) );
 
+
+        int i = Integer.parseInt("02");
+        System.out.println(i);
     }
 }

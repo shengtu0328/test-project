@@ -72,7 +72,7 @@ public class TestSorting {
         result.add(new Developer("alvin", new BigDecimal("80000"), 20));
         result.add(new Developer("jason", new BigDecimal("100000"), 10));
         result.add(new Developer("iris", new BigDecimal("170000"), 55));
-        result.add(new Developer("iris", new BigDecimal("170000"), 55));
+        result.add(new Developer("iris", new BigDecimal("170000"), 20));
 
         return result;
 

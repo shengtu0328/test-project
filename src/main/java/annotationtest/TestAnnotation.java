@@ -14,5 +14,6 @@ public @interface TestAnnotation {
 
    String msg();
 
+    String[] address() default {};
 
 }

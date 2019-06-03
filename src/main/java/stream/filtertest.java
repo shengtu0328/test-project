@@ -6,6 +6,8 @@ import java.util.List;
 public class filtertest {
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+
+        strings.add("333");
         long count = strings.stream().filter(string -> { return string.isEmpty();}).count();
         System.out.println(count);
 

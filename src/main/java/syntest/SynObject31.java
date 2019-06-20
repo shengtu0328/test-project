@@ -5,26 +5,26 @@ package syntest;
  * @author: rqxiao
  * @create: 2018-12-20 17:04
  **/
-public class SynObject3 implements Runnable{
+public class SynObject31 implements Runnable{
 
 
-    SynObject333 SynObject333;
+    SynObject_3 SynObject_3;
 
-    public SynObject3(SynObject333 s33) {
-        SynObject333 =s33;
+    public SynObject31(SynObject_3 s33) {
+        SynObject_3 =s33;
     }
 
 
     @Override
     public void run() {
-        SynObject333.method();
+        SynObject_3.method();
 
 
     }
     public static void main(String[] args) {
-        SynObject333 s333=new SynObject333();
-        SynObject3 s3=new SynObject3(s333);
-        SynObject33 s33=new SynObject33(s333);
+        SynObject_3 s333=new SynObject_3();
+        SynObject31 s3=new SynObject31(s333);
+        SynObject32 s33=new SynObject32(s333);
 
         Thread thread1= new Thread(s3);
         Thread thread2= new Thread(s33);

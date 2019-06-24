@@ -6,5 +6,7 @@ public class equals {
         System.out.println(a.equals(e));
         System.out.println(a==e);
 
+//        ArrayListtest ArrayListtest= new ArrayListtest();
+//        ArrayListtest.a=333;
     }
 }

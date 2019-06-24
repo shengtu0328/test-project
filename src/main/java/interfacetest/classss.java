@@ -11,11 +11,17 @@ public class classss implements inteface1,interface2{
         System.out.println("dsadsada");
     }
 
+    @Override
+    public void c() {
+        System.out.println("c子");
+    }
+
+
     public static void main(String[] args) {
         classss c=new classss();
         c.a();
         c.bb();
 
-
+        c.c();
     }
 }

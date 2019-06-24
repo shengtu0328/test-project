@@ -14,7 +14,7 @@ public class test {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-        List list = new ArrayList<>();
+        ArrayList list = new ArrayList<>();
 
         //集合
         list.add(1);
@@ -30,6 +30,12 @@ public class test {
             //如果存在，则调用next实现迭代
             //Object-->Integer-->int
             int j=(int)iter.next();  //把Object型强转成int型
+            if(j==2){
+
+                iter.remove();
+
+            }
+
             System.out.println(j);
         }
     }

@@ -7,4 +7,9 @@ public interface inteface1 {
     {
         System.out.println("bbb");
     }
+
+    default void c(){
+        System.out.println("c");
+    };
+
 }

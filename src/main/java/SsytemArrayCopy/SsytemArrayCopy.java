@@ -11,15 +11,14 @@ public class SsytemArrayCopy {
 
 
 
-        int arr1[] = {0,1,2,3,4,5};
+        Object arr1[] = {0,1,2,3,4,5};
         int arr2[] = {0,10,20,30,40,50};
 
-
-
-        System.arraycopy(arr1,0,arr2,1,2);
-
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.println(arr2[i]);
+        //把2删了
+        System.arraycopy(arr1,3,arr1,2,3);
+        arr1[5] = null;
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i]);
         }
 
 

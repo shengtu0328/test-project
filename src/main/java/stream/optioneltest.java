@@ -32,7 +32,7 @@ public class optioneltest {
 
 
         User u2= new User();
-        u2.setName("aaaa");
+        u2.setName("ArrayListtest");
 
         Optional.ofNullable(u2).ifPresent(System.out::println);
 

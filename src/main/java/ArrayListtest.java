@@ -7,7 +7,8 @@ public class ArrayListtest {
     private int a;
 
     public static void main(String[] args) {
-        List<Integer> l=new ArrayList<Integer>();
+        ArrayList<Integer> l=new ArrayList<Integer>();
+        l.iterator();
         l.add(1);
         l.add(2);
         l.add(3);

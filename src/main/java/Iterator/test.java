@@ -36,7 +36,11 @@ public class test {
 
             }
 
-            System.out.println(j);
+          //  System.out.println(j);
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
         }
     }
 

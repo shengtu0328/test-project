@@ -21,22 +21,25 @@ public class optioneltest {
 
     public static void main(String[] args) {
 
-
+        Integer i=null;
+        System.out.println(i);
 
         Integer a=900000000;
      //   System.out.println(a);
 
         //调用工厂方法创建Optional实例
-        User u1= new User();
-    Optional.ofNullable(u1).ifPresent(System.out::println);
+//        User u1= new User();
+//    Optional.ofNullable(u1).ifPresent(System.out::println);
 
 
         User u2= new User();
-        u2.setName("ArrayListtest");
+        //u2.setName("namaeee");
 
         Optional.ofNullable(u2).ifPresent(System.out::println);
 
+
         System.out.println(Optional.ofNullable(u2.getName()).isPresent());
+        Optional.ofNullable(u2.getName()).ifPresent(System.out::println);
 
 
 

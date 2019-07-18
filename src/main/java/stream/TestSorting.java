@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TestSorting {
 
@@ -45,8 +46,25 @@ public class TestSorting {
        Long i1=1529633489440l;
         Long i2=1l;
         int c= (int) (i1-i2);
+//        listDevs.stream().filter((t)->t.getAge()>20).limit(2).map(developer -> developer.getName()).forEach(System.out::println);
+//
 
-        listDevs.stream().filter((t)->t.getAge()>22)                        .forEach(u->System.out.println(u.getAge())  );;
+        Developer d=new Developer();
+       String    ss;
+      StringBuilder s=new StringBuilder("321");
+        Stream<String> stringStream = listDevs.stream().filter((t) -> t.getAge() > 20).limit(1).map(developer -> {
+                    System.out.println("map操作中的name" + developer.getName());
+                    d.setName(developer.getName());
+                    return developer.getName();
+                }
+        );
+//        System.out.println("获取到的名字"+stringStream.findFirst().ifPresent(x->ss=x));
+
+
+
+
+
+//    .forEach(u->System.out.println("年龄大于22的"+u.getAge())  );;
 
 
 /*
@@ -68,7 +86,7 @@ public class TestSorting {
 
         List<Developer> result = new ArrayList<Developer>();
         result.add(new Developer("mkyong", new BigDecimal("20000"), 33));
-        result.add(new Developer("mkyong", new BigDecimal("70000"), 33));
+        result.add(new Developer("mkyong2", new BigDecimal("70000"), 33));
         result.add(new Developer("alvin", new BigDecimal("80000"), 20));
         result.add(new Developer("jason", new BigDecimal("100000"), 10));
         result.add(new Developer("iris", new BigDecimal("170000"), 55));

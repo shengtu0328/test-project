@@ -7,9 +7,11 @@ public class hashmap {
         HashMap map=new HashMap();
         StringBuffer response2=null;
         StringBuffer response = new StringBuffer();
-        System.out.println(response);
-        System.out.println(response2);
+        System.out.println("response    "+response);
+        System.out.println("response2   "+response2);
 
         map.put("1","a");
+        System.out.println("remove的结果"+map.remove("1"));
+        System.out.println(map);
     }
 }

@@ -33,6 +33,8 @@ public class test {
 
         Map m = t.getM();
         System.out.println(m);
+        System.out.println(m.toString());
+
         Map m1 = t.m;
         System.out.println(m1);
 

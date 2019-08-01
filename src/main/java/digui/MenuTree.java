@@ -24,6 +24,9 @@ public class MenuTree {
                 MenuTree menuTree = new MenuTree();
                 menuTree.setId(menu.getId());
                 menuTree.setName(menu.getName());
+
+
+                //调用 方法              只有     1
                 menuTreelist.add(findChildren(menuTree, menulist));
             }
         }
@@ -31,17 +34,38 @@ public class MenuTree {
     }
 
     public static MenuTree findChildren(MenuTree menuTree, List<Menu> menulist) {
-        for (Menu menu:menulist) {
-            if(menuTree.getId().equals(menu.getParentId())){
-                MenuTree menuTree1 = new MenuTree();
-                menuTree1.setId(menu.getId());
-                menuTree1.setName(menu.getName());
-                menuTree.getMenuTreeList().add(findChildren(menuTree1,menulist));
+        for (Menu menu : menulist) {
+            if (menuTree.getId().equals(menu.getParentId())) {
+                MenuTree childmenuTree = new MenuTree();
+                childmenuTree.setId(menu.getId());
+                childmenuTree.setName(menu.getName());
+                menuTree.getMenuTreeList().add(findChildren(childmenuTree, menulist));
             }
         }
         return menuTree;
     }
 
+
+
+/*
+
+1.add(2,45)=  4 装好  再装 2.4  再 装 2 4.5
+1.add(3,null)=1.add 3
+
+ */
+
+
+
+
+    /*
+      (1  ,  2,3)
+      (3    null)
+
+      (2    4,5 )
+      (4    null)
+      (5    null)
+
+     */
     public static void main(String[] args) {
     /*
     1
@@ -52,7 +76,6 @@ public class MenuTree {
 
         Menu m2 = new Menu(2, "二", 1);
         Menu m3 = new Menu(3, "三", 1);
-
 
         Menu m4 = new Menu(4, "四", 2);
         Menu m5 = new Menu(5, "五", 2);

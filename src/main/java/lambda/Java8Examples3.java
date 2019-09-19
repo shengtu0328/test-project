@@ -50,7 +50,7 @@ public class Java8Examples3 {
                 items.stream().collect(Collectors.groupingBy(x->x.getName()+x.getId()));
 
 
-        Set<Map.Entry<String, List<Item>>> entries = groupByPriceMap2.entrySet();
+//        Set<Map.Entry<String, List<Item>>> entries = ggroupByPriceMap2.entrySet();
         groupByPriceMap2.entrySet().stream().forEach(x->System.out.println(x.getKey()+"--------"+x.getValue()));
 
 

@@ -61,7 +61,9 @@ public class Employee {
         e2.setName("lxq");
 
 
-
+        Employee e3=null;
+        e3.setName("aa");
+        System.out.println(e3);
     }
 
 

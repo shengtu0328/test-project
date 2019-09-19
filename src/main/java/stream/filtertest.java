@@ -8,20 +8,25 @@ import java.util.stream.Stream;
 
 public class filtertest {
     public static void main(String[] args) {
-        List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+        List<String> strings = Arrays.asList("abc", "abc", "bc", "efg", "abcd","", "jkl");
 
 //        strings.add("333");
 
-        List<String> stringList = strings.stream().filter(string -> "abc".equals(string)).collect(Collectors.toList());
+
+        System.out.println(strings.stream().filter(string -> "abc1".equals(string)).findFirst().isPresent());
+        strings.stream().filter(string -> "abc1".equals(string)).findFirst().ifPresent(System.out::println);
 
 
-
-
-
-
-
-        long count = strings.stream().filter(string -> { return string.isEmpty();}).count();
-        System.out.println(count);
+//        List<String> stringList = strings.stream().filter(string -> "abc".equals(string)).collect(Collectors.toList());
+//
+//
+//
+//
+//
+//
+//
+//        long count = strings.stream().filter(string -> { return string.isEmpty();}).count();
+//        System.out.println(count);
 
 /*
 

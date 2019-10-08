@@ -25,4 +25,9 @@ public class A{
     public void setAge(String age) {
         this.age = age;
     }
+
+    public static void main(String[] args) {
+        String projectPath = System.getProperty("user.dir");
+        System.out.println(projectPath);
+    }
 }

@@ -50,11 +50,11 @@ public class User {
 
     public static void main(String[] args) {
 
-        User user1 = new User("zhangsan", "beijing", 10);
-        User user2 = new User("zhangsan", "beijing", 20);
-        User user3 = new User("lisi", "shanghai", 30);
-        User user4 = new User("lisi", "shanghai", 30);
-        User user5 = new User("lisi2", "shanghai", 30);
+        User user1 = new User("4", "beijing", 10);
+        User user2 = new User("6", "beijing", 20);
+        User user3 = new User("3", "shanghai", 30);
+        User user4 = new User("2", "shanghai", 30);
+        User user5 = new User("1", "shanghai", 30);
 
 
 

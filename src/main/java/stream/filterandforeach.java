@@ -24,6 +24,8 @@ public class filterandforeach {
 
         List<BigDecimal> collect = result.stream().map(developer -> developer.salary).collect(Collectors.toList());
 
+        result.forEach(developer -> developer.setName("lwx"));
+
 
         List<Developer> list = result.stream().filter(developer -> developer.getName().contains("xrq")).collect(Collectors.toList());
 

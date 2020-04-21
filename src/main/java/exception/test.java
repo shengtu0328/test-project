@@ -2,7 +2,7 @@ package exception;
 
 public class test {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("a");
 
 
@@ -15,7 +15,18 @@ public class test {
         }
         catch (Exception e)
         {
+
+            System.out.println("bbbbbb");
+
             System.out.println(e);
+
+
+            throw new Exception();
+
+        }
+        finally {
+            System.out.println("finallyfinallyfinallyfinally");
+
         }
 
 

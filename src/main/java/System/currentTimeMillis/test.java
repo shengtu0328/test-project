@@ -10,8 +10,14 @@ public class test {
 
         SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
-            long time = dateformat.parse("2018-08-13 13:44:17").getTime();
+            long time = dateformat.parse("2018-08-13 13:47:17").getTime();
             System.out.println(time);
+
+            long time2 = dateformat.parse("2018-08-13 13:44:17").getTime();
+            System.out.println(time2);
+
+            System.out.println(time - time2);
+            System.out.println(3 * 60 * 1000);
 
 
         } catch (ParseException e) {

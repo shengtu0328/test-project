@@ -8,11 +8,12 @@ public class test {
     public static void main(String[] args) {
 
 
-        BigDecimal b1=new BigDecimal(0);
-        BigDecimal add = b1.add(new BigDecimal(2));
+        BigDecimal b1=new           BigDecimal("11440008111111111111111111111111111111111111111111114400081111111111111111111111111111111111111111111144000811111111111111111111111111111111111111111111440008111111111111111111111111111111111111111111.0001");
+        BigDecimal add = b1.add(new BigDecimal("11440008111111111111111111111111111111111111111111114400081111111111111111111111111111111111111111111144000811111111111111111111111111111111111111111111440008111111111111111111111111111111111111111111.1"));
 
-
-        System.out.println(new BigDecimal("1.2").equals(new BigDecimal("1.20")));  //输出false
-        System.out.println(new BigDecimal("1.2").compareTo(new BigDecimal("1.20")) == 0); //输出true
+        System.out.println(add);
+//
+//        System.out.println(new BigDecimal("1.2").equals(new BigDecimal("1.20")));  //输出false
+//        System.out.println(new BigDecimal("1.2").compareTo(new BigDecimal("1.20")) == 0); //输出true
     }
 }

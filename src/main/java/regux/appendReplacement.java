@@ -10,15 +10,15 @@ import java.util.regex.Pattern;
  **/
 public class appendReplacement {
 
+    private static final String TITLE_REGEX = "[\n`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~！@#￥……&*（）——+|{}【】‘；：\"”“’。， 、？]";
 
     public static void main(String[] args) {
-        String hql="aORderborderc";
-        Pattern p = Pattern.compile("order", Pattern.CASE_INSENSITIVE);
-        Matcher m = p.matcher(hql);
-        StringBuffer sb = new StringBuffer();
-        while (m.find()) {
-            m.appendReplacement(sb, "");
-        }
-        m.appendTail(sb);
+
+        String title = "关于转发《卫生部关于印发<处方常用药品通用名目录>的通知》的通知";
+        String titleReplace = title.replace(TITLE_REGEX, title);
+
+
+        System.out.println(titleReplace);
+
     }
 }

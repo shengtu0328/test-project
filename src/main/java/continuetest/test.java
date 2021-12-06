@@ -15,7 +15,12 @@ public class test {
     }
 
     public static void main(String[] args) {
-        test t=new test();
-        t.aa();
+        Boolean aBoolean=null;
+        if(true&&aBoolean){
+            System.out.println("true");
+        }
+
+//        test t=new test();
+//        t.aa();
     }
 }

@@ -17,11 +17,12 @@ public class son extends father {
 
     public son(String name) {
 
-//        super(name);
-        System.out.println("son 有参");
+        super(name);
 
-        this.name = name;
     }
 
+    public static   father of(){
+        return new son("fathermethod参数");
 
+    }
 }

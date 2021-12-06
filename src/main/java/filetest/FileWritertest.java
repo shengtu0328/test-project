@@ -7,7 +7,7 @@ public class FileWritertest {
 
 
     public static void main(String[] args) throws IOException {
-        String filePath = "D:\\test2.txt";
+        String filePath = "/tmp/logs/test2.txt";
         FileWriter fw = new FileWriter(filePath);
 
         String str="呵呵好久啊  啊撒打算的";

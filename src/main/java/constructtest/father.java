@@ -24,16 +24,18 @@ public class father {
         this.name = name;
     }
 
+    public static   father of(){
+        return new father("fathermethod参数");
+
+    }
+
 
     public static void main(String[] args) {
-        father father=new father();
 
-        father father2=new father("1");
-
+        father.of();
 
 
-        son son2=new son("sdasd");
 
-
+        son.of();
     }
 }

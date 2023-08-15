@@ -17,7 +17,7 @@ public class FileWriterTest {
         fw.write(type+"");                     //若直接用type作为参数，写入的是type按ascll码对应的字符
         fw.write('\n');                        //换行符也可以直接写入
         fw.write(ch);                          //字符可以直接写入
-      /*  fw.flush();
-        fw.close();*/
+        fw.flush();
+        fw.close();
     }
 }

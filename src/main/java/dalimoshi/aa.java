@@ -1,6 +1,6 @@
 package dalimoshi;
 
-public class aa implements interface11 {
+public class aa implements jiekou1 {
     @Override
     public void o() {
         System.out.println("aao");

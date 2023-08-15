@@ -1,6 +1,6 @@
 package dalimoshi;
 
-public class A implements interface11 {
+public class A implements jiekou1 {
 
     private aa aa=new aa();
 

@@ -1,7 +1,8 @@
 package dailimoshiddongtai;
 
+import dalimoshi.A;
 import dalimoshi.aa;
-import dalimoshi.interface11;
+import dalimoshi.jiekou1;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -28,11 +29,17 @@ public class aaproxy implements InvocationHandler {
 
 
     public static void main(String[] args) {
-        interface11 interface11 = new aa();
+        jiekou1 interface11 = new aa();
         InvocationHandler handler = new aaproxy(interface11);
-        interface11 bp = (interface11) Proxy.newProxyInstance(interface11.getClass().getClassLoader(), interface11.getClass().getInterfaces(), handler);
+        jiekou1 bp = (jiekou1) Proxy.newProxyInstance(interface11.getClass().getClassLoader(), interface11.getClass().getInterfaces(), handler);
         bp.o();
-        bp.o2();
+
+
+
+        jiekou1 interface12 = new A();
+        InvocationHandler handler2 = new aaproxy(interface12);
+        jiekou1 bp2 = (jiekou1) Proxy.newProxyInstance(interface12.getClass().getClassLoader(), interface12.getClass().getInterfaces(), handler2);
+        bp2.o();
 
     }
 }
